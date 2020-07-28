@@ -135,6 +135,11 @@ if ( PentahoSystem.getApplicationContext().getFullyQualifiedServerURL().toLowerC
       <div class='row-fluid'>
         <script type="text/x-handlebars-template">
           <div class="well sidebar">
+            
+            <button class="btn btn-large btn-block" onclick="window.top.location.href='/suitecrmanalytics/plugin/SuiteCRMAnalytics/api/main'">
+              SuiteCRM Analytics
+            </button>
+
             {{#if canReadContent}}
             <button class="btn btn-large btn-block" onclick="window.parent.mantle_setPerspective('browser.perspective')">
               {{i18n.browse}}

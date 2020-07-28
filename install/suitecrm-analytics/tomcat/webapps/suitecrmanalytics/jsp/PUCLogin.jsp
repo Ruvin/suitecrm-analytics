@@ -301,7 +301,7 @@
     if (returnLocation != '' && returnLocation != null) {
       window.location.href = returnLocation;
     } else {
-      window.location.href = window.location.href.replace("Login", "Home") + "?locale=" + locale;
+      window.location.href = window.location.href.replace("Login", "plugin/SuiteCRMAnalytics/api/main") + "?locale=" + locale;
     }
 
   }
