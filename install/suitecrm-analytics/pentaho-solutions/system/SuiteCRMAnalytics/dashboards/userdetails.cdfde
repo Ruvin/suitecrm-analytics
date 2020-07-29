@@ -1,0 +1,529 @@
+{
+  "components" : {
+    "rows" : [
+      {
+        "id" : "PARAMETERS",
+        "name" : "Parameters",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "Parameters",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "33e8ef81-6ba8-056f-e5e4-567f800da773",
+        "type" : "ComponentsJavascriptParameter",
+        "typeDesc" : "Custom parameter",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "userDetailsParam",
+            "type" : "Id"
+          },
+          {
+            "name" : "javaScript",
+            "value" : "{} ",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "parameterViewRole",
+            "value" : "unused",
+            "type" : "parameterViewRoleCustom"
+          },
+          {
+            "name" : "bookmarkable",
+            "value" : "false",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "public",
+            "value" : "false",
+            "type" : "Boolean"
+          }
+        ],
+        "rowName" : "Custom Parameter"
+      },
+      {
+        "id" : "1906f16e-f892-45e8-5d80-38b3eff47eda",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "updateParam",
+            "type" : "Id"
+          },
+          {
+            "name" : "propertyValue",
+            "value" : "",
+            "type" : "String"
+          },
+          {
+            "name" : "parameterViewRole",
+            "value" : "unused",
+            "type" : "parameterViewRoleCustom"
+          },
+          {
+            "name" : "bookmarkable",
+            "value" : "false",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "public",
+            "value" : "false",
+            "type" : "Boolean"
+          }
+        ],
+        "rowName" : "Simple Parameter"
+      },
+      {
+        "id" : "IVYISBOOTSTRAP",
+        "name" : "Ivy IS Bootstrap",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "Ivy IS Bootstrap",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "31eb4a5d-9bde-53bf-fdce-312eb79cb0b6",
+        "type" : "ComponentsBSButtonComponent",
+        "typeDesc" : "Bootstrap Button",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "saveButtonComponent",
+            "type" : "Id"
+          },
+          {
+            "name" : "label",
+            "value" : "Save",
+            "type" : "String"
+          },
+          {
+            "name" : "listeners",
+            "value" : "[]",
+            "type" : "Listeners"
+          },
+          {
+            "name" : "expression",
+            "value" : "function d(){\n    Dashboards.fireChange(\u0022updateParam\u0022,1);    \n} ",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "priority",
+            "value" : 5,
+            "type" : "Integer"
+          },
+          {
+            "name" : "refreshPeriod",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "buttonType",
+            "value" : "btn-primary",
+            "type" : "buttonTypeCustom"
+          },
+          {
+            "name" : "buttonBlock",
+            "value" : "true",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "buttonSize",
+            "value" : "",
+            "type" : "buttonSizeCustom"
+          },
+          {
+            "name" : "prependIcon",
+            "value" : "False",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "buttonIcon",
+            "value" : "none",
+            "type" : "buttonIconCustom"
+          },
+          {
+            "name" : "buttonDisabled",
+            "value" : "false",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "htmlObject",
+            "value" : "${h:saveButtonAnchor}",
+            "type" : "HtmlObject"
+          },
+          {
+            "name" : "executeAtStart",
+            "value" : "true",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "preExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          }
+        ],
+        "rowName" : "Bootstrap Button"
+      },
+      {
+        "id" : "STANDARDCOMPONENTS",
+        "name" : "Standard",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "Standard",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "39de460d-804a-3675-7262-c9962982b82f",
+        "type" : "ComponentsQuery",
+        "typeDesc" : "Query Component",
+        "parent" : "STANDARDCOMPONENTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "updateUserDetailsComponent",
+            "type" : "Id"
+          },
+          {
+            "name" : "listeners",
+            "value" : "[\u0022${p:updateParam}\u0022]",
+            "type" : "Listeners"
+          },
+          {
+            "name" : "parameters",
+            "value" : "[]",
+            "type" : "ValuesArray"
+          },
+          {
+            "name" : "resultvar",
+            "value" : "",
+            "type" : "Result"
+          },
+          {
+            "name" : "dataSource",
+            "value" : "",
+            "type" : "Datasource"
+          },
+          {
+            "name" : "asynchronousMode",
+            "value" : "true",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "priority",
+            "value" : 5,
+            "type" : "Integer"
+          },
+          {
+            "name" : "refreshPeriod",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "htmlObject",
+            "value" : "",
+            "type" : "HtmlObject"
+          },
+          {
+            "name" : "executeAtStart",
+            "value" : "true",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "preExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postFetch",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "preChange",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postChange",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "tooltip",
+            "value" : "",
+            "type" : "Html"
+          }
+        ],
+        "rowName" : "Query Component"
+      }
+    ]
+  },
+  "datasources" : {
+    "rows" : [
+      {
+        "id" : "SUITECRMANALYTICS_CPKENDPOINTS",
+        "name" : "SUITECRMANALYTICS Endpoints",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "SUITECRMANALYTICS Endpoints",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "be4c1483-cf77-7810-4bbd-7572fc5cce1a",
+        "type" : "ComponentsSuiteCRMAnalytics_getUserDetails_CPKENDPOINT",
+        "typeDesc" : "getUserDetails Endpoint",
+        "parent" : "SUITECRMANALYTICS_CPKENDPOINTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "getUserDetailsEP",
+            "type" : "Id"
+          },
+          {
+            "name" : "stepName",
+            "value" : "OUTPUT",
+            "type" : "String"
+          },
+          {
+            "name" : "kettleOutput",
+            "value" : "Inferred",
+            "type" : "kettleOutputCustom"
+          }
+        ],
+        "meta" : "CPK",
+        "meta_pluginId" : "SuiteCRMAnalytics",
+        "meta_endpoint" : "getUserDetails",
+        "rowName" : "getUserDetails Endpoint"
+      },
+      {
+        "id" : "fd94879d-b922-71ab-8b92-156de171561b",
+        "type" : "ComponentsSuiteCRMAnalytics_putUserDetails_CPKENDPOINT",
+        "typeDesc" : "putUserDetails Endpoint",
+        "parent" : "SUITECRMANALYTICS_CPKENDPOINTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "setUserDetailsEP",
+            "type" : "Id"
+          },
+          {
+            "name" : "stepName",
+            "value" : "OUTPUT",
+            "type" : "String"
+          },
+          {
+            "name" : "kettleOutput",
+            "value" : "Inferred",
+            "type" : "kettleOutputCustom"
+          }
+        ],
+        "meta" : "CPK",
+        "meta_pluginId" : "SuiteCRMAnalytics",
+        "meta_endpoint" : "putUserDetails",
+        "rowName" : "putUserDetails Endpoint"
+      }
+    ]
+  },
+  "filename" : "/system/SuiteCRMAnalytics/dashboards/userdetails.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "d89e2512-f6e2-351e-b53c-050e2aa3476d",
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "opts",
+            "type" : "Id"
+          },
+          {
+            "name" : "resourceCode",
+            "value" : "var properties = {\n    pageID:\u0022userDetails\u0022,\n    pageTitle:\u0022User Details\u0022,\n    pageSubtitle:\u0022\u0022,\n    pageBreadcrumb:[\u0022Settings\u0022,\u0022User Details\u0022],\n    pageSection:\u0022settings\u0022\n} ",
+            "type" : "Resource"
+          },
+          {
+            "name" : "resourceType",
+            "value" : "Javascript",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "53542712-4646-6364-7dd6-79457a0b760f",
+        "type" : "LayoutRow",
+        "typeDesc" : "Row",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "height",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "backgroundColor",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "roundCorners",
+            "value" : "",
+            "type" : "RoundCorners"
+          },
+          {
+            "name" : "textAlign",
+            "value" : "",
+            "type" : "TextAlign"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      },
+      {
+        "id" : "f7dcd67b-2dd2-f723-0d0c-04143e5f0108",
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column",
+        "parent" : "53542712-4646-6364-7dd6-79457a0b760f",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "value" : "",
+            "type" : "String"
+          },
+          {
+            "name" : "height",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "backgroundColor",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "roundCorners",
+            "value" : "",
+            "type" : "RoundCorners"
+          },
+          {
+            "name" : "textAlign",
+            "value" : "",
+            "type" : "TextAlign"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      },
+      {
+        "id" : "7dcfc9f3-4954-64ce-f1ed-9509e6c7e9d5",
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html",
+        "parent" : "f7dcd67b-2dd2-f723-0d0c-04143e5f0108",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "html",
+            "value" : "\u003Cform class=\u0022form-horizontal\u0022 role=\u0022form\u0022\u003E\n  \u003Cdiv class=\u0022form-group\u0022\u003E\n    \u003Clabel for=\u0022\u0022 class=\u0022col-md-2 control-label\u0022\u003EName\u003C/label\u003E\n    \u003Cdiv class=\u0022col-md-2\u0022 id=\u0022titleAnchor\u0022\u003E\u003C/div\u003E\n    \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022firstnameAnchor\u0022\u003E\u003C/div\u003E\n    \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022lastnameAnchor\u0022\u003E\u003C/div\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\u0022form-group\u0022\u003E\n    \u003Clabel for=\u0022\u0022 class=\u0022col-md-2 control-label\u0022\u003EGender\u003C/label\u003E\n    \u003Cdiv class=\u0022col-md-2\u0022 id=\u0022genderAnchor\u0022\u003E\u003C/div\u003E\n    \u003Clabel for=\u0022\u0022 class=\u0022col-md-1 control-label\u0022\u003EEmail\u003C/label\u003E\n    \u003Cdiv class=\u0022col-md-7\u0022 id=\u0022emailAddressAnchor\u0022\u003E\u003C/div\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\u0022form-group\u0022\u003E\n    \u003Clabel for=\u0022\u0022 class=\u0022col-md-2 control-label\u0022\u003EOffice\u003C/label\u003E\n    \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022phoneNumberAnchor\u0022\u003E\u003C/div\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\u0022form-group\u0022\u003E\n    \u003Clabel for=\u0022\u0022 class=\u0022col-md-2 control-label\u0022\u003EMobile\u003C/label\u003E\n    \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022mobileNumberAnchor\u0022\u003E\u003C/div\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\u0022form-group\u0022\u003E\n    \u003Cdiv class=\u0022col-md-offset-2 col-md-2\u0022 id=\u0022saveButtonAnchor\u0022\u003E\u003C/div\u003E\n  \u003C/div\u003E\n\u003C/form\u003E ",
+            "type" : "Html"
+          },
+          {
+            "name" : "fontSize",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "color",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      }
+    ],
+    "title" : "userdetails"
+  }
+}

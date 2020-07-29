@@ -1,0 +1,257 @@
+{
+  "components" : {
+    "rows" : [ ]
+  },
+  "datasources" : {
+    "rows" : [
+      {
+        "id" : "SQL",
+        "name" : "SQL Queries",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "SQL Queries"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "0a56c773-c21a-33cb-c9aa-716d1c31731a",
+        "meta" : "CDA",
+        "meta_conntype" : "sql.jndi",
+        "meta_datype" : "sql",
+        "parent" : "SQL",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "dummy"
+          },
+          {
+            "name" : "access",
+            "type" : "Access",
+            "value" : "public"
+          },
+          {
+            "name" : "jndi",
+            "type" : "Jndi",
+            "value" : ""
+          },
+          {
+            "name" : "query",
+            "type" : "SqlQuery",
+            "value" : ""
+          },
+          {
+            "name" : "parameters",
+            "type" : "CdaParameters",
+            "value" : "[]"
+          },
+          {
+            "name" : "cdacalculatedcolumns",
+            "type" : "CdaCalculatedColumnsArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "cdacolumns",
+            "type" : "CdaColumnsArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "output",
+            "type" : "IndexArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "outputMode",
+            "type" : "OutputMode",
+            "value" : "include"
+          },
+          {
+            "name" : "cacheKeys",
+            "type" : "CacheKeysValues",
+            "value" : "[]"
+          },
+          {
+            "name" : "cacheDuration",
+            "type" : "Integer",
+            "value" : 3600
+          },
+          {
+            "name" : "cache",
+            "type" : "Boolean",
+            "value" : "true"
+          }
+        ],
+        "type" : "Componentssql_sqlJndi",
+        "typeDesc" : "sql over sqlJndi"
+      }
+    ]
+  },
+  "filename" : "/system/SuiteCRMAnalytics/dashboards/help.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "c150ce26-f44d-7288-5dd6-0379dcafb05d",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "opts"
+          },
+          {
+            "name" : "resourceCode",
+            "type" : "Resource",
+            "value" : "var properties = {\n    pageID:\u0022help\u0022,\n    pageTitle:\u0022Help\u0022,\n    pageSubtitle:\u0022\u0022,\n    pageBreadcrumb:[\u0022Help\u0022],\n    pageSection:\u0022\u0022\n} "
+          },
+          {
+            "name" : "resourceType",
+            "type" : "Label",
+            "value" : "Javascript"
+          }
+        ],
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource"
+      },
+      {
+        "id" : "3ee38596-dd80-12d1-dfd1-44a4f1fc791c",
+        "type" : "LayoutRow",
+        "typeDesc" : "Row",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "height",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "backgroundColor",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "roundCorners",
+            "value" : "",
+            "type" : "RoundCorners"
+          },
+          {
+            "name" : "textAlign",
+            "value" : "",
+            "type" : "TextAlign"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      },
+      {
+        "id" : "4ff889b6-659b-3433-7038-0bbf75a05596",
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column",
+        "parent" : "3ee38596-dd80-12d1-dfd1-44a4f1fc791c",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "value" : "12",
+            "type" : "String"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "value" : "",
+            "type" : "String"
+          },
+          {
+            "name" : "height",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "backgroundColor",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "roundCorners",
+            "value" : "",
+            "type" : "RoundCorners"
+          },
+          {
+            "name" : "textAlign",
+            "value" : "",
+            "type" : "TextAlign"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      },
+      {
+        "id" : "2651d069-6017-9d60-7006-bb051028c629",
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html",
+        "parent" : "4ff889b6-659b-3433-7038-0bbf75a05596",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "",
+            "type" : "Id"
+          },
+          {
+            "name" : "html",
+            "value" : "\u003Cdiv class=\u0022box box-default\u0022\u003E\n    \u003Cdiv class=\u0022box-body\u0022\u003E\n        \u003Cdiv class=\u0022row\u0022\u003E\n            \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                \u003Ch2\u003EDocumentation\u003C/h2\u003E\n                \u003Cp\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit quam, pharetra sit amet lacus non, hendrerit molestie nunc. Sed dignissim dignissim tincidunt. Nunc ac rhoncus ipsum. Pellentesque sed convallis lectus. Curabitur in velit augue. In ut molestie elit. Nam accumsan turpis gravida nibh interdum, lacinia aliquam lacus convallis. Sed a mauris consequat, ornare urna et, ultrices erat. Maecenas in ipsum id arcu tincidunt congue sit amet vitae lacus. Sed dolor nibh, fringilla sit amet suscipit fermentum, sodales nec quam. Integer sit amet leo non massa placerat tempor nec non diam. Morbi rutrum mollis lorem id gravida. Praesent eleifend ullamcorper iaculis. Proin libero justo, tristique non tortor sed, rutrum eleifend lacus. Praesent finibus ipsum risus, vel gravida nisi feugiat in.\u003C/p\u003E\n                \u003Cp\u003ECurabitur tincidunt aliquam venenatis. Aliquam sit amet purus sollicitudin, mattis augue id, aliquet lectus. Cras sit amet velit suscipit, dapibus tortor at, elementum sem. Quisque feugiat, risus vitae aliquet gravida, turpis augue fermentum nisi, sit amet aliquet quam magna eget leo. Cras nec enim porta tortor euismod congue. Suspendisse tempus semper felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed gravida urna vulputate dui scelerisque, a aliquet ante eleifend. Vivamus justo purus, finibus quis ex eget, hendrerit molestie diam. Mauris consequat nibh at tellus hendrerit pharetra. In iaculis, nisl et posuere suscipit, tellus ipsum pulvinar lorem, a malesuada lorem tortor sed augue. Nunc congue eget nunc vel ullamcorper. Vivamus sit amet congue nisi, sit amet auctor metus. Fusce pretium interdum molestie. Ut mauris libero, semper ut cursus eget, pharetra viverra diam. Duis sed semper risus.\u003C/p\u003E\n                \u003Cdiv class=\u0022callout callout-warning\u0022\u003E\n                    \u003Ch4\u003EReminder!\u003C/h4\u003E\n                    \u003Cp\u003E\n                    AdminLTE uses all of Bootstrap 3 components. It\u0027s a good start to review\n                    the \u003Ca href=\u0022http://getbootstrap.com\u0022\u003EBootstrap documentation\u003C/a\u003E to get an idea of the various\n                    components that this documentation \u003Cb\u003Edoes not\u003C/b\u003E cover.\n                    \u003C/p\u003E\n                \u003C/div\u003E\n            \u003C/div\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n\u003C/div\u003E ",
+            "type" : "Html"
+          },
+          {
+            "name" : "fontSize",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "color",
+            "value" : "",
+            "type" : "Color"
+          },
+          {
+            "name" : "cssClass",
+            "value" : "",
+            "type" : "String"
+          }
+        ]
+      }
+    ],
+    "title" : "help"
+  }
+}

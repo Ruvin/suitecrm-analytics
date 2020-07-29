@@ -70,6 +70,11 @@ suitecrmanalytics.functions = {
                 $('#reports-list').addClass('menu-open');
                 $('#reports-list').css('display','block');
             break;
+
+            case "tools":
+                $('#tools-list').addClass('menu-open');
+                $('#tools-list').css('display','block');
+            break;
         }
     },
 
@@ -120,7 +125,11 @@ suitecrmanalytics.functions = {
 
     setRecents:function(existingRecentsArray,newSolutionObject){
 
-        if(newSolutionObject.title !== "main.wcdf" || newSolutionObject.title !== "settings.wcdf" || newSolutionObject.title !== "help.wcdf"){
+        var ignoredPages = ['main.wcdf','settings.wcdf','help.wcdf']
+
+        //if(newSolutionObject.title !== "main.wcdf" || newSolutionObject.title !== "settings.wcdf" || newSolutionObject.title !== "help.wcdf"){
+        //if(newSolutionObject.title !== "main.wcdf"){
+        if(!ignoredPages.includes(newSolutionObject.title)){
             var recentExists = 0;
             var recentExistsPosition = 0;
 
@@ -149,7 +158,7 @@ suitecrmanalytics.functions = {
                 contentType:"text/plain; charset=utf-8",
                 dataType:"json",
                 success: function(){
-                    
+
                 }
             });
         }
@@ -181,6 +190,9 @@ suitecrmanalytics.functions = {
                 break;
                 case 'LeadPerformanceDashboard.wcdf':
                     cleanTitle = "Lead Performance";
+                break;
+                case 'ExportSuiteCRMAnalyticsData.wcdf':
+                    cleanTitle = "Data Exporter";
                 break;
                 case 'ReportDashboard.wcdf':
                     cleanTitle = "Report Sample";
